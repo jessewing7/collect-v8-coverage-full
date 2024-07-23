@@ -26,10 +26,6 @@ class CoverageInstrumenter {
       'Profiler.takePreciseCoverage',
     );
 
-    await this.postSession('Profiler.stopPreciseCoverage');
-
-    await this.postSession('Profiler.disable');
-
     // When using networked filesystems on Windows, v8 sometimes returns URLs
     // of the form file:////<host>/path. These URLs are not well understood
     // by NodeJS (see https://github.com/nodejs/node/issues/48530).
